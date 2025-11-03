@@ -1,4 +1,4 @@
-# INFORME TÉCNICO - PRÁCTICA CALIFICADA N° 01
+# INFORME TÉCNICO 
 
 ## QuadTree para Búsqueda Espacial
 
@@ -466,8 +466,8 @@ Campos opcionales: Cualquier atributo adicional
 
 ---
 
-**Fecha de entrega:** [Fecha actual]  
-**Curso:** Estructura de Datos  
+**Fecha de entrega:** [2/11/2025]  
+**Curso:** Estructura de Datos Avanzados 
 **Práctica:** Calificada N° 01  
 
 ---
