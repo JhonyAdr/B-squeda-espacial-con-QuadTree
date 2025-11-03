@@ -1,0 +1,17 @@
+{
+  "fecha": "2025-11-02 20:16:05",
+  "consulta": "Vecino más cercano",
+  "punto_consulta": {
+    "x": 400,
+    "y": 400
+  },
+  "vecino_encontrado": {
+    "x": 445.67,
+    "y": 534.23,
+    "distancia": 141.79,
+    "id": 19,
+    "category": "Store",
+    "name": "Store #19",
+    "rating": 3.8
+  }
+}

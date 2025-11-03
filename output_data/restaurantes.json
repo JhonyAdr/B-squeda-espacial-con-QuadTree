@@ -1,0 +1,48 @@
+{
+  "fecha": "2025-11-02 20:16:05",
+  "consulta": "Filtrado por categoría",
+  "categoria": "Restaurant",
+  "total_encontrados": 5,
+  "puntos": [
+    {
+      "x": 156.72,
+      "y": 234.81,
+      "id": 1,
+      "category": "Restaurant",
+      "name": "Restaurant #1",
+      "rating": 4.3
+    },
+    {
+      "x": 723.45,
+      "y": 189.23,
+      "id": 2,
+      "category": "Restaurant",
+      "name": "Restaurant #2",
+      "rating": 3.8
+    },
+    {
+      "x": 645.23,
+      "y": 456.78,
+      "id": 5,
+      "category": "Restaurant",
+      "name": "Restaurant #5",
+      "rating": 4.1
+    },
+    {
+      "x": 412.89,
+      "y": 567.34,
+      "id": 3,
+      "category": "Restaurant",
+      "name": "Restaurant #3",
+      "rating": 4.7
+    },
+    {
+      "x": 298.56,
+      "y": 823.12,
+      "id": 4,
+      "category": "Restaurant",
+      "name": "Restaurant #4",
+      "rating": 3.5
+    }
+  ]
+}

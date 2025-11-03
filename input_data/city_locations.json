@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "x": 156.72,
+    "y": 234.81,
+    "category": "Restaurant",
+    "name": "Restaurant #1",
+    "rating": 4.3
+  },
+  {
+    "id": 2,
+    "x": 723.45,
+    "y": 189.23,
+    "category": "Restaurant",
+    "name": "Restaurant #2",
+    "rating": 3.8
+  },
+  {
+    "id": 3,
+    "x": 412.89,
+    "y": 567.34,
+    "category": "Restaurant",
+    "name": "Restaurant #3",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "x": 298.56,
+    "y": 823.12,
+    "category": "Restaurant",
+    "name": "Restaurant #4",
+    "rating": 3.5
+  },
+  {
+    "id": 5,
+    "x": 645.23,
+    "y": 456.78,
+    "category": "Restaurant",
+    "name": "Restaurant #5",
+    "rating": 4.1
+  },
+  {
+    "id": 6,
+    "x": 891.34,
+    "y": 234.56,
+    "category": "Hospital",
+    "name": "Hospital #6",
+    "rating": 4.5
+  },
+  {
+    "id": 7,
+    "x": 523.67,
+    "y": 678.91,
+    "category": "Hospital",
+    "name": "Hospital #7",
+    "rating": 4.2
+  },
+  {
+    "id": 8,
+    "x": 167.89,
+    "y": 456.23,
+    "category": "Hospital",
+    "name": "Hospital #8",
+    "rating": 4.8
+  },
+  {
+    "id": 9,
+    "x": 734.56,
+    "y": 812.34,
+    "category": "Hospital",
+    "name": "Hospital #9",
+    "rating": 4.0
+  },
+  {
+    "id": 10,
+    "x": 423.45,
+    "y": 189.67,
+    "category": "School",
+    "name": "School #10",
+    "rating": 4.4
+  },
+  {
+    "id": 11,
+    "x": 678.91,
+    "y": 534.23,
+    "category": "School",
+    "name": "School #11",
+    "rating": 3.9
+  },
+  {
+    "id": 12,
+    "x": 234.67,
+    "y": 712.45,
+    "category": "School",
+    "name": "School #12",
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "x": 845.23,
+    "y": 367.89,
+    "category": "School",
+    "name": "School #13",
+    "rating": 4.2
+  },
+  {
+    "id": 14,
+    "x": 512.34,
+    "y": 923.56,
+    "category": "School",
+    "name": "School #14",
+    "rating": 3.7
+  },
+  {
+    "id": 15,
+    "x": 367.89,
+    "y": 145.23,
+    "category": "Park",
+    "name": "Park #15",
+    "rating": 4.5
+  },
+  {
+    "id": 16,
+    "x": 789.45,
+    "y": 612.78,
+    "category": "Park",
+    "name": "Park #16",
+    "rating": 4.3
+  },
+  {
+    "id": 17,
+    "x": 156.78,
+    "y": 889.34,
+    "category": "Park",
+    "name": "Park #17",
+    "rating": 4.1
+  },
+  {
+    "id": 18,
+    "x": 623.45,
+    "y": 267.91,
+    "category": "Park",
+    "name": "Park #18",
+    "rating": 4.7
+  },
+  {
+    "id": 19,
+    "x": 445.67,
+    "y": 534.23,
+    "category": "Store",
+    "name": "Store #19",
+    "rating": 3.8
+  },
+  {
+    "id": 20,
+    "x": 912.34,
+    "y": 456.78,
+    "category": "Store",
+    "name": "Store #20",
+    "rating": 4.2
+  },
+  {
+    "id": 21,
+    "x": 267.89,
+    "y": 723.45,
+    "category": "Store",
+    "name": "Store #21",
+    "rating": 3.6
+  },
+  {
+    "id": 22,
+    "x": 734.56,
+    "y": 189.23,
+    "category": "Store",
+    "name": "Store #22",
+    "rating": 4.4
+  },
+  {
+    "id": 23,
+    "x": 523.67,
+    "y": 812.34,
+    "category": "Store",
+    "name": "Store #23",
+    "rating": 4.0
+  },
+  {
+    "id": 24,
+    "x": 189.45,
+    "y": 367.89,
+    "category": "Bank",
+    "name": "Bank #24",
+    "rating": 4.5
+  },
+  {
+    "id": 25,
+    "x": 856.78,
+    "y": 645.23,
+    "category": "Bank",
+    "name": "Bank #25",
+    "rating": 4.1
+  },
+  {
+    "id": 26,
+    "x": 423.45,
+    "y": 912.56,
+    "category": "Bank",
+    "name": "Bank #26",
+    "rating": 3.9
+  },
+  {
+    "id": 27,
+    "x": 678.91,
+    "y": 234.67,
+    "category": "Bank",
+    "name": "Bank #27",
+    "rating": 4.6
+  },
+  {
+    "id": 28,
+    "x": 312.34,
+    "y": 567.89,
+    "category": "Pharmacy",
+    "name": "Pharmacy #28",
+    "rating": 4.2
+  },
+  {
+    "id": 29,
+    "x": 789.56,
+    "y": 423.45,
+    "category": "Pharmacy",
+    "name": "Pharmacy #29",
+    "rating": 3.8
+  },
+  {
+    "id": 30,
+    "x": 145.23,
+    "y": 789.34,
+    "category": "Pharmacy",
+    "name": "Pharmacy #30",
+    "rating": 4.4
+  }
+]
+

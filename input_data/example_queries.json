@@ -1,0 +1,61 @@
+{
+  "range_queries": [
+    {
+      "description": "Centro de la ciudad",
+      "center_x": 500,
+      "center_y": 500,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "description": "Zona norte",
+      "center_x": 500,
+      "center_y": 200,
+      "width": 400,
+      "height": 200
+    },
+    {
+      "description": "Esquina sureste",
+      "center_x": 800,
+      "center_y": 800,
+      "width": 300,
+      "height": 300
+    }
+  ],
+  "nearest_neighbor_queries": [
+    {
+      "description": "Desde punto central",
+      "query_x": 500,
+      "query_y": 500
+    },
+    {
+      "description": "Desde esquina",
+      "query_x": 100,
+      "query_y": 100
+    },
+    {
+      "description": "Punto aleatorio",
+      "query_x": 650.5,
+      "query_y": 380.2
+    }
+  ],
+  "filter_queries": [
+    {
+      "description": "Todos los hospitales",
+      "attribute": "category",
+      "value": "Hospital"
+    },
+    {
+      "description": "Restaurantes bien valorados",
+      "attribute": "category",
+      "value": "Restaurant",
+      "filter_rating_gte": 4.0
+    },
+    {
+      "description": "Todas las escuelas",
+      "attribute": "category",
+      "value": "School"
+    }
+  ]
+}
+

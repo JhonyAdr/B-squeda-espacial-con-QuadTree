@@ -1,0 +1,40 @@
+{
+  "fecha": "2025-11-02 20:16:05",
+  "consulta": "Filtrado por categoría",
+  "categoria": "Hospital",
+  "total_encontrados": 4,
+  "puntos": [
+    {
+      "x": 167.89,
+      "y": 456.23,
+      "id": 8,
+      "category": "Hospital",
+      "name": "Hospital #8",
+      "rating": 4.8
+    },
+    {
+      "x": 891.34,
+      "y": 234.56,
+      "id": 6,
+      "category": "Hospital",
+      "name": "Hospital #6",
+      "rating": 4.5
+    },
+    {
+      "x": 523.67,
+      "y": 678.91,
+      "id": 7,
+      "category": "Hospital",
+      "name": "Hospital #7",
+      "rating": 4.2
+    },
+    {
+      "x": 734.56,
+      "y": 812.34,
+      "id": 9,
+      "category": "Hospital",
+      "name": "Hospital #9",
+      "rating": 4.0
+    }
+  ]
+}

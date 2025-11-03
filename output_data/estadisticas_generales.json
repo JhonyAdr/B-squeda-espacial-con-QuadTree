@@ -1,0 +1,23 @@
+{
+  "fecha": "2025-11-02 20:16:05",
+  "estadisticas": {
+    "total_puntos": 30,
+    "por_categoria": {
+      "Restaurant": 5,
+      "School": 5,
+      "Park": 4,
+      "Hospital": 4,
+      "Bank": 4,
+      "Store": 5,
+      "Pharmacy": 3
+    },
+    "rating_promedio": 4.19,
+    "arbol_subdividido": true
+  },
+  "resumen_consultas": {
+    "puntos_en_centro": 3,
+    "total_restaurantes": 5,
+    "total_hospitales": 4,
+    "vecino_mas_cercano_distancia": 141.79
+  }
+}

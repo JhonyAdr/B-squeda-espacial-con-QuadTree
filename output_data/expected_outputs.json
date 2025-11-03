@@ -1,0 +1,41 @@
+{
+  "test_case_1": {
+    "description": "Inserción básica",
+    "input_points": 5,
+    "expected_count": 5,
+    "expected_subdivided": false
+  },
+  "test_case_2": {
+    "description": "Subdivisión forzada",
+    "input_points": 20,
+    "expected_min_count": 20,
+    "expected_subdivided": true
+  },
+  "test_case_3": {
+    "description": "Consulta de rango",
+    "query_rect": {
+      "x": 500,
+      "y": 500,
+      "width": 200,
+      "height": 200
+    },
+    "expected_result_type": "list_of_points"
+  },
+  "test_case_4": {
+    "description": "Vecino más cercano",
+    "query_point": {
+      "x": 500,
+      "y": 500
+    },
+    "expected_result_type": "single_point",
+    "expected_distance_computed": true
+  },
+  "test_case_5": {
+    "description": "Filtrado por atributo",
+    "filter_attribute": "category",
+    "filter_value": "Hospital",
+    "expected_result_type": "list_of_points",
+    "min_expected": 1
+  }
+}
+
