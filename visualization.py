@@ -174,17 +174,28 @@ class QuadTreeVisualizer:
         self.screen.blit(legend_title, (panel_x, y))
         y += 30
         
-        for category, color in CATEGORY_COLORS.items():
-            pygame.draw.circle(self.screen, color, (panel_x + 10, y + 8), 6)
-            pygame.draw.circle(self.screen, BLACK, (panel_x + 10, y + 8), 6, 1)
+        # Guardar la posición inicial de las categorías para el clic
+        self.categories_start_y = y
+        
+        for i, (category, color) in enumerate(CATEGORY_COLORS.items()):
+            # Resaltar si está en modo filtro
+            if self.mode == "filter":
+                # Dibujar rectángulo de hover/selección
+                if category == self.selected_category:
+                    pygame.draw.rect(self.screen, LIGHT_BLUE, (panel_x, y, 200, 25), 0)
+                else:
+                    pygame.draw.rect(self.screen, (240, 240, 240), (panel_x, y, 200, 25), 1)
+            
+            pygame.draw.circle(self.screen, color, (panel_x + 10, y + 8), 7)
+            pygame.draw.circle(self.screen, BLACK, (panel_x + 10, y + 8), 7, 2)
             text = self.small_font.render(category, True, BLACK)
             self.screen.blit(text, (panel_x + 25, y))
             y += 25
         
         # Si estamos en modo filtro, mostrar controles
         if self.mode == "filter":
-            y += 20
-            filter_text = "Click categoría para filtrar:"
+            y += 10
+            filter_text = "👆 Click categoría para filtrar"
             surface = self.small_font.render(filter_text, True, RED)
             self.screen.blit(surface, (panel_x, y))
     
@@ -220,12 +231,19 @@ class QuadTreeVisualizer:
     def handle_filter_click(self, screen_x, screen_y):
         """Maneja el click para filtrar por categoría"""
         panel_x = self.vis_width + self.offset_x + 20
-        y = 330  # Posición aproximada donde empieza la leyenda
         
+        # Usar la posición guardada dinámicamente
+        if not hasattr(self, 'categories_start_y'):
+            return
+        
+        y = self.categories_start_y
+        
+        # Hacer el área de clic más grande: toda la fila de la categoría
         for i, category in enumerate(CATEGORY_COLORS.keys()):
-            circle_y = y + 30 + (i * 25) + 8
-            if (panel_x + 10 - 10 <= screen_x <= panel_x + 10 + 10 and
-                circle_y - 10 <= screen_y <= circle_y + 10):
+            category_y = y + (i * 25)
+            # Área clickeable: todo el ancho del panel y la altura de la fila
+            if (panel_x <= screen_x <= panel_x + 200 and
+                category_y <= screen_y <= category_y + 25):
                 self.selected_category = category
                 self.filtered_points = self.quadtree.filter_by_attribute('category', category)
                 return

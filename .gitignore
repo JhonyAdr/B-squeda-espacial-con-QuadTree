@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Video (descomenta si el video es muy grande para GitHub)
+# demo_video/*.mp4
+# demo_video/*.avi
+
+# Output data generados (opcional, si no quieres subir resultados)
+# output_data/*.json
+
+# Archivos temporales
+*.log
+*.tmp
+

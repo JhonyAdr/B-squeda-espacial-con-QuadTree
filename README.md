@@ -4,6 +4,10 @@
 
 Este proyecto implementa un **QuadTree** (árbol cuaternario) para búsqueda espacial eficiente en espacios bidimensionales. El QuadTree es una estructura de datos que particiona recursivamente el espacio en cuatro cuadrantes, permitiendo realizar consultas espaciales de manera óptima.
 
+### 🎥 Video Demostración
+
+**[Ver video de demostración](demo_video/demo_quadtree.mp4)** - Demostración completa del sistema en acción
+
 ### Funcionalidades Principales
 
 ✅ **Inserción de puntos** con atributos personalizados  
@@ -267,21 +271,29 @@ with open('output_data/mi_consulta.json', 'w', encoding='utf-8') as f:
 ```
 Búsqueda espacial con QuadTree/
 │
-├── quadtree.py              # Implementación del QuadTree
-├── visualization.py          # Interfaz gráfica con pygame
-├── main.py                   # Script principal con múltiples modos
-├── trabajar_con_datos.py    # Script para trabajar con entrada/salida
+├── quadtree.py                   # Implementación del QuadTree
+├── visualization.py              # Interfaz gráfica con pygame
+├── main.py                       # Script principal con múltiples modos
+├── trabajar_con_datos.py        # Script para trabajar con entrada/salida
+├── ver_resultados.py             # Visualizador de resultados
 │
-├── requirements.txt          # Dependencias del proyecto
-├── README.md                 # Este archivo
-├── INFORME.md               # Informe técnico del proyecto
+├── requirements.txt              # Dependencias del proyecto
+├── README.md                     # Este archivo
+├── INFORME.md                   # Informe técnico del proyecto
+├── CHANGELOG.md                 # Registro de cambios
+├── INSTRUCCIONES_CAMBIOS.md    # Guía para agregar cambios
 │
-├── input_data/              # Datos de entrada
+├── input_data/                  # Datos de entrada
 │   ├── city_locations.json
-│   └── example_queries.json
+│   ├── example_queries.json
+│   └── README.txt
 │
-└── output_data/             # Resultados y salidas
-    └── expected_outputs.json
+├── output_data/                 # Resultados y salidas
+│   ├── expected_outputs.json
+│   └── README.txt
+│
+└── demo_video/                  # Video de demostración
+    └── README.txt
 ```
 
 ---
@@ -468,7 +480,7 @@ Este proyecto es de uso académico para la práctica calificada.
 - [x] Archivos de entrada/salida de ejemplo
 - [x] Interfaz gráfica para demostración
 - [x] Informe técnico (INFORME.md)
-- [ ] Demo en vivo (presentación)
+- [] Demo en vivo (presentación)
 
 ---
 
