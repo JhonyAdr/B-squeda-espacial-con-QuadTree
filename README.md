@@ -480,7 +480,7 @@ Este proyecto es de uso académico para la práctica calificada.
 - [x] Archivos de entrada/salida de ejemplo
 - [x] Interfaz gráfica para demostración
 - [x] Informe técnico (INFORME.md)
-- [] Demo en vivo (presentación)
+- [x] Demo en vivo (presentación)
 
 ---
 
