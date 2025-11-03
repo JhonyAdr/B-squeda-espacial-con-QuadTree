@@ -1,4 +1,4 @@
-# INFORME TÉCNICO - PRÁCTICA CALIFICADA N° 01
+# INFORME TÉCNICO 
 
 ## QuadTree para Búsqueda Espacial
 
