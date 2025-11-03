@@ -195,7 +195,7 @@ class QuadTreeVisualizer:
         # Si estamos en modo filtro, mostrar controles
         if self.mode == "filter":
             y += 10
-            filter_text = "👆 Click categoría para filtrar"
+            filter_text = "Click categoría para filtrar"
             surface = self.small_font.render(filter_text, True, RED)
             self.screen.blit(surface, (panel_x, y))
     

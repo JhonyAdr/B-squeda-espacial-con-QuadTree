@@ -22,11 +22,11 @@ Una búsqueda lineal (O(n)) es ineficiente para grandes conjuntos de datos. El *
 
 ### 1.3 Alcance
 
-- ✅ Implementación completa de QuadTree con subdivisión dinámica
-- ✅ Operaciones: inserción, consulta de rango, vecino más cercano, filtrado
-- ✅ Interfaz gráfica interactiva con pygame
-- ✅ Suite de pruebas unitarias exhaustivas
-- ✅ Documentación y casos de uso prácticos
+- Implementación completa de QuadTree con subdivisión dinámica
+- Operaciones: inserción, consulta de rango, vecino más cercano, filtrado
+- Interfaz gráfica interactiva con pygame
+- Suite de pruebas unitarias exhaustivas
+- Documentación y casos de uso prácticos
 
 ---
 
@@ -395,11 +395,11 @@ for zone in zones:
 
 ### 9.1 Logros del Proyecto
 
-✅ **Implementación completa**: QuadTree funcional con todas las operaciones requeridas  
-✅ **Eficiencia demostrada**: Mejoras de 8-20x sobre búsqueda lineal  
-✅ **UI intuitiva**: Interfaz gráfica que facilita comprensión y demostración  
-✅ **Código robusto**: 100% de tests pasando, código documentado  
-✅ **Aplicabilidad práctica**: Casos de uso reales implementados  
+- **Implementación completa**: QuadTree funcional con todas las operaciones requeridas  
+- **Eficiencia demostrada**: Mejoras de 8-20x sobre búsqueda lineal  
+- **UI intuitiva**: Interfaz gráfica que facilita comprensión y demostración  
+- **Código robusto**: Código documentado  
+- **Aplicabilidad práctica**: Casos de uso reales implementados  
 
 ### 9.2 Aprendizajes Clave
 

@@ -10,12 +10,12 @@ def ver_archivo(filename):
     filepath = os.path.join('output_data', filename)
     
     if not os.path.exists(filepath):
-        print(f"❌ El archivo {filename} no existe aún.")
+        print(f"El archivo {filename} no existe aún.")
         print(f"   Ejecuta primero: python trabajar_con_datos.py\n")
         return
     
     print(f"\n{'='*70}")
-    print(f"  📄 {filename}")
+    print(f"  {filename}")
     print('='*70)
     
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -24,7 +24,7 @@ def ver_archivo(filename):
     # Mostrar información según el tipo de archivo
     if 'estadisticas' in data:
         # Es el archivo de estadísticas generales
-        print(f"\n📊 Estadísticas Generales:")
+        print(f"\nEstadísticas Generales:")
         print(f"   Fecha: {data.get('fecha', 'N/A')}")
         print(f"   Total de puntos: {data['estadisticas']['total_puntos']}")
         print(f"\n   Por categoría:")
@@ -33,13 +33,13 @@ def ver_archivo(filename):
         print(f"\n   Rating promedio: {data['estadisticas']['rating_promedio']}")
         
         if 'resumen_consultas' in data:
-            print(f"\n📋 Resumen de Consultas:")
+            print(f"\nResumen de Consultas:")
             for key, value in data['resumen_consultas'].items():
                 print(f"      • {key.replace('_', ' ').title()}: {value}")
     
     elif 'vecino_encontrado' in data:
         # Es el archivo de vecino más cercano
-        print(f"\n🎯 Vecino Más Cercano:")
+        print(f"\nVecino Más Cercano:")
         print(f"   Fecha: {data.get('fecha', 'N/A')}")
         print(f"   Punto de consulta: ({data['punto_consulta']['x']}, {data['punto_consulta']['y']})")
         vecino = data['vecino_encontrado']
@@ -51,7 +51,7 @@ def ver_archivo(filename):
     
     elif 'puntos' in data and 'total_encontrados' in data:
         # Es un archivo de consulta (rango o filtrado)
-        print(f"\n🔍 Consulta: {data.get('consulta', 'N/A')}")
+        print(f"\nConsulta: {data.get('consulta', 'N/A')}")
         print(f"   Fecha: {data.get('fecha', 'N/A')}")
         
         if 'parametros' in data:
@@ -80,7 +80,7 @@ def ver_archivo(filename):
 def main():
     """Muestra todos los resultados disponibles"""
     print("\n" + "="*70)
-    print("  📊 VISUALIZADOR DE RESULTADOS - QuadTree")
+    print("  VISUALIZADOR DE RESULTADOS - QuadTree")
     print("="*70)
     
     # Lista de archivos a buscar
@@ -100,20 +100,20 @@ def main():
             archivos_encontrados.append(archivo)
     
     if not archivos_encontrados:
-        print("\n❌ No se encontraron archivos de resultados.")
-        print("\n💡 Para generar resultados, ejecuta:")
+        print("\nNo se encontraron archivos de resultados.")
+        print("\nPara generar resultados, ejecuta:")
         print("   python trabajar_con_datos.py")
         print()
         return
     
-    print(f"\n✅ Se encontraron {len(archivos_encontrados)} archivos de resultados\n")
+    print(f"\nSe encontraron {len(archivos_encontrados)} archivos de resultados\n")
     
     # Mostrar cada archivo
     for archivo in archivos_encontrados:
         ver_archivo(archivo)
     
     print("="*70)
-    print("  ✅ Fin de los resultados")
+    print("  Fin de los resultados")
     print("="*70 + "\n")
 
 

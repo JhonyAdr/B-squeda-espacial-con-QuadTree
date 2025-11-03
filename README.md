@@ -1,26 +1,26 @@
 # QuadTree - Sistema de Búsqueda Espacial
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto implementa un **QuadTree** (árbol cuaternario) para búsqueda espacial eficiente en espacios bidimensionales. El QuadTree es una estructura de datos que particiona recursivamente el espacio en cuatro cuadrantes, permitiendo realizar consultas espaciales de manera óptima.
 
-### 🎥 Video Demostración
+### Video Demostración
 
 **[Ver video de demostración](demo_video/demo_quadtree.mp4)** - Demostración completa del sistema en acción
 
 ### Funcionalidades Principales
 
-✅ **Inserción de puntos** con atributos personalizados  
-✅ **Consultas de rango rectangular** - Encuentra todos los puntos dentro de un área  
-✅ **Búsqueda del vecino más cercano** - Algoritmo optimizado con poda  
-✅ **Filtrado por atributos** - Busca puntos con características específicas  
-✅ **Conteo por atributos** - Estadísticas sobre categorías de puntos  
-✅ **Interfaz gráfica interactiva** - Visualización en tiempo real con pygame  
-✅ **Suite completa de pruebas** - Tests unitarios exhaustivos  
+- **Inserción de puntos** con atributos personalizados  
+- **Consultas de rango rectangular** - Encuentra todos los puntos dentro de un área  
+- **Búsqueda del vecino más cercano** - Algoritmo optimizado con poda  
+- **Filtrado por atributos** - Busca puntos con características específicas  
+- **Conteo por atributos** - Estadísticas sobre categorías de puntos  
+- **Interfaz gráfica interactiva** - Visualización en tiempo real con pygame  
+- **Suite completa de pruebas** - Tests unitarios exhaustivos  
 
 ---
 
-## 🚀 Instalación
+## Instalación
 
 ### Requisitos Previos
 
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📖 Uso del Sistema
+## Uso del Sistema
 
 ### 1. Interfaz Gráfica Interactiva (Recomendado)
 
@@ -92,10 +92,10 @@ python trabajar_con_datos.py
 ```
 
 **Este script:**
-- ✅ Carga datos desde `input_data/city_locations.json`
-- ✅ Realiza múltiples consultas (rango, vecino más cercano, filtrado)
-- ✅ Genera estadísticas
-- ✅ Guarda todos los resultados en `output_data/`
+- Carga datos desde `input_data/city_locations.json`
+- Realiza múltiples consultas (rango, vecino más cercano, filtrado)
+- Genera estadísticas
+- Guarda todos los resultados en `output_data/`
 
 **Archivos generados:**
 - `puntos_centro.json` - Puntos en el centro de la ciudad
@@ -198,7 +198,7 @@ quadtree> exit
 
 ---
 
-## 💾 Trabajar con Archivos de Entrada y Salida
+## Trabajar con Archivos de Entrada y Salida
 
 ### Estructura de Carpetas
 
@@ -266,7 +266,7 @@ with open('output_data/mi_consulta.json', 'w', encoding='utf-8') as f:
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Búsqueda espacial con QuadTree/
@@ -298,7 +298,7 @@ Búsqueda espacial con QuadTree/
 
 ---
 
-## 🎯 Casos de Uso Prácticos
+## Casos de Uso Prácticos
 
 ### 1. **Sistema de Geolocalización**
 Encuentra restaurantes, hospitales o servicios cercanos a tu ubicación.
@@ -341,7 +341,7 @@ print(f"Restaurantes: {restaurants}, Hospitales: {hospitals}")
 
 ---
 
-## 📊 Complejidad Temporal
+## Complejidad Temporal
 
 | Operación | Caso Promedio | Caso Peor |
 |-----------|---------------|-----------|
@@ -354,7 +354,7 @@ print(f"Restaurantes: {restaurants}, Hospitales: {hospitals}")
 
 ---
 
-## 🔧 Configuración Avanzada
+## Configuración Avanzada
 
 ### Ajustar capacidad del nodo:
 
@@ -412,7 +412,7 @@ pip install pygame --upgrade
 
 ---
 
-## 📝 Ejemplos de Código
+## Ejemplos de Código
 
 ### Ejemplo Completo:
 
@@ -458,13 +458,13 @@ Estructura de Datos - QuadTree para Búsqueda Espacial
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es de uso académico para la práctica calificada.
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 - [Quadtree - Wikipedia](https://en.wikipedia.org/wiki/Quadtree)
 - [Spatial Indexing with Quadtrees](https://www.youtube.com/watch?v=OJxEcs0w_kE)
@@ -472,7 +472,7 @@ Este proyecto es de uso académico para la práctica calificada.
 
 ---
 
-## ✅ Checklist de Entregables
+## Checklist de Entregables
 
 - [x] Código fuente completo y documentado
 - [x] README con instrucciones detalladas
@@ -486,5 +486,5 @@ Este proyecto es de uso académico para la práctica calificada.
 
 **¿Preguntas o problemas?** Revisa la sección de solución de problemas o consulta el código fuente con comentarios detallados.
 
-**¡Disfruta explorando el QuadTree! 🌳**
+**Disfruta explorando el QuadTree!**
 

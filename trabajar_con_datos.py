@@ -12,24 +12,24 @@ def cargar_datos_desde_archivo(filename):
     """Carga datos desde un archivo JSON en input_data/"""
     filepath = os.path.join('input_data', filename)
     
-    print(f"📥 Cargando datos desde {filepath}...")
+    print(f"Cargando datos desde {filepath}...")
     
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        print(f"✅ {len(data)} registros cargados exitosamente\n")
+        print(f"{len(data)} registros cargados exitosamente\n")
         return data
     except FileNotFoundError:
-        print(f"❌ Error: No se encontró el archivo {filepath}")
+        print(f"Error: No se encontró el archivo {filepath}")
         return []
     except json.JSONDecodeError:
-        print(f"❌ Error: El archivo {filepath} no es un JSON válido")
+        print(f"Error: El archivo {filepath} no es un JSON válido")
         return []
 
 
 def crear_quadtree_con_datos(data):
     """Crea un QuadTree e inserta los datos"""
-    print("🌳 Creando QuadTree e insertando puntos...")
+    print("Creando QuadTree e insertando puntos...")
     
     # Crear QuadTree con boundary de 1000x1000
     boundary = Rectangle(500, 500, 1000, 1000)
@@ -46,30 +46,30 @@ def crear_quadtree_con_datos(data):
             if qt.insert(point):
                 insertados += 1
         else:
-            print(f"⚠️  Advertencia: Registro sin coordenadas x,y: {item}")
+            print(f"Advertencia: Registro sin coordenadas x,y: {item}")
     
-    print(f"✅ {insertados} puntos insertados en el QuadTree")
-    print(f"🌳 Árbol subdividido: {'Sí' if qt.root.divided else 'No'}\n")
+    print(f"{insertados} puntos insertados en el QuadTree")
+    print(f"Árbol subdividido: {'Sí' if qt.root.divided else 'No'}\n")
     
     return qt
 
 
 def realizar_consulta_rango(qt, center_x, center_y, width, height, descripcion=""):
     """Realiza una consulta de rango rectangular"""
-    print(f"📦 Consulta de Rango: {descripcion}")
+    print(f"Consulta de Rango: {descripcion}")
     print(f"   Centro: ({center_x}, {center_y}), Tamaño: {width}x{height}")
     
     rect = Rectangle(center_x, center_y, width, height)
     results = qt.query_range(rect)
     
-    print(f"   ✅ Encontrados: {len(results)} puntos\n")
+    print(f"   Encontrados: {len(results)} puntos\n")
     
     return results
 
 
 def realizar_vecino_mas_cercano(qt, query_x, query_y, descripcion=""):
     """Busca el vecino más cercano a un punto"""
-    print(f"🎯 Vecino Más Cercano: {descripcion}")
+    print(f"Vecino Más Cercano: {descripcion}")
     print(f"   Desde punto: ({query_x}, {query_y})")
     
     query_point = Point(query_x, query_y)
@@ -77,29 +77,29 @@ def realizar_vecino_mas_cercano(qt, query_x, query_y, descripcion=""):
     
     if nearest:
         distance = query_point.distance_to(nearest)
-        print(f"   ✅ Encontrado: {nearest.attributes.get('name', 'Sin nombre')}")
-        print(f"   📍 Ubicación: ({nearest.x:.2f}, {nearest.y:.2f})")
-        print(f"   📏 Distancia: {distance:.2f} unidades\n")
+        print(f"   Encontrado: {nearest.attributes.get('name', 'Sin nombre')}")
+        print(f"   Ubicación: ({nearest.x:.2f}, {nearest.y:.2f})")
+        print(f"   Distancia: {distance:.2f} unidades\n")
         return nearest, distance
     else:
-        print(f"   ❌ No se encontró ningún punto\n")
+        print(f"   No se encontró ningún punto\n")
         return None, None
 
 
 def filtrar_por_categoria(qt, categoria):
     """Filtra puntos por categoría"""
-    print(f"🔍 Filtrando por categoría: {categoria}")
+    print(f"Filtrando por categoría: {categoria}")
     
     results = qt.filter_by_attribute('category', categoria)
     
-    print(f"   ✅ Encontrados: {len(results)} puntos\n")
+    print(f"   Encontrados: {len(results)} puntos\n")
     
     return results
 
 
 def generar_estadisticas(qt):
     """Genera estadísticas del QuadTree"""
-    print("📊 Generando estadísticas...")
+    print("Generando estadísticas...")
     
     all_points = qt.get_all_points()
     
@@ -134,15 +134,15 @@ def guardar_resultados(data, filename):
     
     filepath = os.path.join('output_data', filename)
     
-    print(f"💾 Guardando resultados en {filepath}...")
+    print(f"Guardando resultados en {filepath}...")
     
     try:
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"✅ Resultados guardados exitosamente\n")
+        print(f"Resultados guardados exitosamente\n")
         return True
     except Exception as e:
-        print(f"❌ Error al guardar: {e}\n")
+        print(f"Error al guardar: {e}\n")
         return False
 
 
@@ -161,14 +161,14 @@ def puntos_a_dict(points):
 def main():
     """Función principal"""
     print("\n" + "="*70)
-    print("  🌳 TRABAJAR CON DATOS DE ENTRADA Y SALIDA - QuadTree")
+    print("  TRABAJAR CON DATOS DE ENTRADA Y SALIDA - QuadTree")
     print("="*70 + "\n")
     
     # ========== 1. CARGAR DATOS DE ENTRADA ==========
     data = cargar_datos_desde_archivo('city_locations.json')
     
     if not data:
-        print("❌ No se pudieron cargar datos. Saliendo...")
+        print("No se pudieron cargar datos. Saliendo...")
         return
     
     # ========== 2. CREAR QUADTREE ==========
@@ -274,10 +274,10 @@ def main():
     
     # ========== 6. RESUMEN FINAL ==========
     print("="*70)
-    print("  ✅ PROCESO COMPLETADO")
+    print("  PROCESO COMPLETADO")
     print("="*70 + "\n")
     
-    print("📂 Archivos generados en output_data/:")
+    print("Archivos generados en output_data/:")
     print("   • puntos_centro.json")
     print("   • vecino_mas_cercano.json")
     print("   • restaurantes.json")
